@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <title>Feed Back Form</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+    <body>
+        <h1 class="form-heading"><u>Fill The Form</u></h1>
+        <section class="form-container">
+            <form onsubmit="sendEmail() ; reset() ; return false ;" >
+                <input type="text" id="name" placeholder="Your Name" required><br><br>
+                <input type="email" id="email" placeholder="Email Id" required><br><br>
+                <input type="text" id="Phone" placeholder="Phone.No" required><br><br>
+                <div class="form-group">
+                    <select type="Rate the video" id="Like the Video" required>
+                        <option value="" selected disabled>Do you Like It...</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="And">And So On</option>
+                    </select>
+                </div>
+                <br><br>
+                <textarea id="message" rows="5" placeholder="Comment Your Idea To Improve My Work..."></textarea>
+                <button type="submit">SEND</button>
+            </form>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>THANK YOU</h1>
+        <div class="back-button">
+            <button class="back-button"><a href="cal.html">Back to Calculator</a></button>
+        </div>
+        <script src="cal.js"></script>
+        <!-- <script scr="https://smtpjs.com/v3/smtp.js"></script> -->
+    </body>
+</html>
